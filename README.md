@@ -5,9 +5,9 @@
 <p>
 Anywhere, Everywhere <br>
 
-For SUCCESS responses use       `successJsonResponse()` 
-For ERROR responses use         `errorJsonResponse()`
-For Exception responses use     `errorExceptionJsonResponse()`
+For SUCCESS responses use       `successJsonResponse()` <br>
+For ERROR responses use         `errorJsonResponse()` <br>
+For Exception responses use     `errorExceptionJsonResponse()` <br>
 </p>
 
 <br>
@@ -52,9 +52,9 @@ For Exception responses use     `errorExceptionJsonResponse()`
 
 ### <u>Usage</u>
 
-For SUCCESS responses use       `successJsonResponse()` 
-For ERROR responses use         `errorJsonResponse()`
-For Exception responses use     `errorExceptionJsonResponse()`
+For SUCCESS responses use       `successJsonResponse()` <br>
+For ERROR responses use         `errorJsonResponse()` <br>
+For Exception responses use     `errorExceptionJsonResponse()` <br>
 
 <br>
 
