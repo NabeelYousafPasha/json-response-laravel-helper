@@ -28,7 +28,7 @@
         "files": [
             "app/Helpers/helper.php"
         ]
-    ```
+    ``` 
 `4.` Run `composer dump-autoload` <br>
 
 <br>
