@@ -24,12 +24,12 @@
 `1.` Copy directory/file `Helpers/helper.php` into your Laravel `app/` directory <br>
 `2.` Navigate to composer.json file <br>
 `3.` Find `"autoload": {` and add 
-        ```
+
+    ```
             "files": [
             "app/Helpers/helper.php"
         ]
     ```
-
 `4.` Run `composer dump-autoload` <br>
 
 <br>
