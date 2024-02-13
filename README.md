@@ -1,12 +1,13 @@
 ## DRY (Dont Repeat Yourself) Approach for your `API JSON Responses` in Laravel
 
-<p align="center">
-    <a href="https://laravel.com" target="_blank">
-        <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" 
-        width="450" 
-        alt="Laravel Logo"
-    >
-    </a>
+#### `successJsonResponse()`, `errorJsonResponse()` and `errorExceptionJsonResponse()` 
+
+<p>
+Anywhere, Everywhere <br>
+
+For SUCCESS responses use       `successJsonResponse()` 
+For ERROR responses use         `errorJsonResponse()`
+For Exception responses use     `errorExceptionJsonResponse()`
 </p>
 
 <br>
@@ -50,6 +51,14 @@
 <br>
 
 ### <u>Usage</u>
+
+For SUCCESS responses use       `successJsonResponse()` 
+For ERROR responses use         `errorJsonResponse()`
+For Exception responses use     `errorExceptionJsonResponse()`
+
+<br>
+
+### <u>Example</u>
 
 ```
 <?php
