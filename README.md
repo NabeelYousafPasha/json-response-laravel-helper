@@ -28,7 +28,8 @@
             "files": [
             "app/Helpers/helper.php"
         ]
-        ```
+    ```
+
 `4.` Run `composer dump-autoload` <br>
 
 <br>
@@ -120,11 +121,13 @@ class RapidApiController extends Controller
   <tbody>
     <tr>
         <td align="center">
-            <img width="150" height="150" src="https://avatars.githubusercontent.com/u/46818315?v=4">
-            <br>
-            <strong>NABEEL YOUSAF PASHA</strong>
-            <br>
-            <a href="https://github.com/NabeelYousafPasha">@NabeelYousafPasha</a>
+            <a href="https://github.com/NabeelYousafPasha">
+                <img width="150" height="150" src="https://avatars.githubusercontent.com/u/46818315?v=4">
+                <br>
+                <strong>NABEEL YOUSAF PASHA</strong>
+                <br>
+                @NabeelYousafPasha
+            </a>
         </td>
      </tr>
   </tbody>
