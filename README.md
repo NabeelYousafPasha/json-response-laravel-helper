@@ -24,9 +24,8 @@
 `1.` Copy directory/file `Helpers/helper.php` into your Laravel `app/` directory <br>
 `2.` Navigate to composer.json file <br>
 `3.` Find `"autoload": {` and add 
-
     ```
-            "files": [
+        "files": [
             "app/Helpers/helper.php"
         ]
     ```
