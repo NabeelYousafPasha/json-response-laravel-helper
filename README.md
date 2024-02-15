@@ -5,9 +5,9 @@
 <p>
 Anywhere, Everywhere <br>
 
-For SUCCESS responses use       `successJsonResponse()` <br>
-For ERROR responses use         `errorJsonResponse()` <br>
-For Exception responses use     `errorExceptionJsonResponse()` <br>
+-  For `SUCCESS` responses use       `successJsonResponse()` <br>
+-  For `ERROR` responses use         `errorJsonResponse()` <br>
+-  For `EXCEPTION` responses use     `errorExceptionJsonResponse()`
 </p>
 
 <br>
@@ -25,25 +25,25 @@ For Exception responses use     `errorExceptionJsonResponse()` <br>
 `1.` Copy directory/file `Helpers/helper.php` into your Laravel `app/` directory <br>
 `2.` Navigate to `composer.json` file <br>
 `3.` Find `"autoload": {` and add 
-    `
+    ```
         "files": [
             "app/Helpers/helper.php"
         ]
-    ` 
+    ```
 
 `3.(a)` Your `autload` section of `composer.json` should look like this
 
-```
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/",
-            "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
-        },
-        "files": [
-            "app/Helpers/helper.php"
-        ]
+```json
+"autoload": {
+    "psr-4": {
+        "App\\": "app/",
+        "Database\\Factories\\": "database/factories/",
+        "Database\\Seeders\\": "database/seeders/"
     },
+    "files": [
+        "app/Helpers/helper.php"
+    ]
+},
 ```
 
 `4.` Run `composer dump-autoload` <br>
@@ -52,15 +52,15 @@ For Exception responses use     `errorExceptionJsonResponse()` <br>
 
 ### <u>Usage</u>
 
-For SUCCESS responses use       `successJsonResponse()` <br>
-For ERROR responses use         `errorJsonResponse()` <br>
-For Exception responses use     `errorExceptionJsonResponse()` <br>
+- For `SUCCESS` responses use       `successJsonResponse()` <br>
+- For `ERROR` responses use         `errorJsonResponse()` <br>
+- For `EXCEPTION` responses use     `errorExceptionJsonResponse()`
 
 <br>
 
 ### <u>Example</u>
 
-```
+```php
 <?php
 
 namespace App\Http\Controllers\API;
