@@ -56,23 +56,28 @@ if (! function_exists('successJsonResponse')) {
      * Format "Success" response in json
      *
      * @param array $response
+     * @param int|null $statusCode
+     * 
      * @return JsonResponse
      */
-    function successJsonResponse(array $response): JsonResponse 
+    function successJsonResponse(array $response, int $statusCode = NULL): JsonResponse 
     {
         $message = $response['message'] ?? '';
 
         $response = [
             'code_key' => 'SUCCESS',
-            'error' => false,
-            'success' => true,
-            'message' => $message,
-            'data' => [...$response],
+            'error' => FALSE,
+            'success' => TRUE,
+            'data' => [
+                ...$response
+            ],
         ];
 
-        $responseStatusCode = $response['status_code'] ?? Response::HTTP_OK;
+        if ($message) {
+            $response['message'] = $message;
+        }
 
-        return response()->json($response, $responseStatusCode);
+        return response()->json($response, $statusCode ?? Response::HTTP_OK);
     }
 }
 
@@ -82,23 +87,28 @@ if (! function_exists('errorJsonResponse')) {
      * Format "Error" response in json
      *
      * @param array $response
+     * @param int|null $statusCode
+     * 
      * @return JsonResponse
      */
-    function errorJsonResponse(array $response): JsonResponse 
+    function errorJsonResponse(array $response, int $statusCode = NULL): JsonResponse 
     {
         $message = $response['message'] ?? '';
 
         $response = [
             'code_key' => 'FAILURE',
-            'error' => true,
-            'success' => false,
-            'message' => $message,
-            'errors' => [...$response],
+            'error' => TRUE,
+            'success' => FALSE,
+            'data' => [
+                ...$response
+            ],
         ];
 
-        $responseStatusCode = $response['status_code'] ?? Response::HTTP_INTERNAL_SERVER_ERROR;
+        if ($message) {
+            $response['message'] = $message;
+        }
 
-        return response()->json($response, $responseStatusCode);
+        return response()->json($response, $statusCode ?? Response::HTTP_INTERNAL_SERVER_ERROR);
     }
 }
 
